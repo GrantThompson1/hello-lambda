@@ -10,8 +10,8 @@ public class HelloWorldFunction implements RequestHandler<String, String> {
     public String handleRequest(String input, Context context) {
         LambdaLogger logger = context.getLogger();
 
-        logger.log("Green! Invoked HelloWorldFunction with argument '" + input + "'\n");
+        logger.log("Blue Invoked HelloWorldFunction with argument '" + input + "'\n");
 
-        return "Hello " + input;
+        return "Blue, Hello " + input;
     }
 }
